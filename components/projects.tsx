@@ -103,7 +103,7 @@ const projects = [
   {
     title: 'Client Project - Product Info Collector',
     description: 'Mobile application for gathering and managing product item information, syncing with ERP systems.',
-    image: '/qubeart.jpg', // Placeholder image path - update this
+    image: '/qubeart.png', // Placeholder image path - update this
     technologies: ['Flutter', 'Dart', 'ERPNext', 'Frappe APIs', 'Data Collection'],
     category: 'Mobile Development',
     achievements: ['Product data collection', 'ERP sync', 'Android app published', 'iOS app published'],
