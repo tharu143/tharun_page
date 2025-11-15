@@ -8,7 +8,7 @@ const achievements = [
   {
     icon: <Smartphone className="w-8 h-8" />,
     title: 'Published 4 Mobile Apps',
-    description: '3 Android apps and 1 iOS app live on respective stores',
+    description: '5 Android apps and 3 iOS app live on respective stores',
     value: '4 Apps',
     color: 'from-green-400 to-blue-500',
   },
@@ -125,19 +125,19 @@ export function Achievements() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">8+</div>
+              <div className="text-3xl font-bold mb-2">11+</div>
               <div className="text-blue-100">Months Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">15+</div>
+              <div className="text-3xl font-bold mb-2">25+</div>
               <div className="text-blue-100">Projects Completed</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">4</div>
+              <div className="text-3xl font-bold mb-2">5</div>
               <div className="text-blue-100">Apps Published</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">5+</div>
+              <div className="text-3xl font-bold mb-2">15+</div>
               <div className="text-blue-100">APIs Developed</div>
             </div>
           </div>

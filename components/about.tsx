@@ -128,7 +128,7 @@ export function About() {
             </p>
             <p>
               My expertise spans across multiple technologies including Flutter, MERN stack, .NET MAUI, 
-              and ERPNext API development. I've successfully published 3 Android applications and 1 iOS 
+              and ERPNext API development. I've successfully published 5 Android applications and 3 iOS 
               application to their respective stores, focusing on HR, CRM, Sales, and Accounting modules.
             </p>
             <p>

@@ -10,7 +10,7 @@ const education = [
     institution: 'Theni Kammavar Sangam College of Technology',
     duration: '2021 - 2024',
     location: 'Tamil Nadu, India',
-    grade: 'CGPA: 8.6',
+    grade: 'CGPA: 9.4',
     description: 'Focused on software engineering, data structures, algorithms, and mobile application development.',
   },
   {
