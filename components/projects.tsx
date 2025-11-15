@@ -2,8 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ExternalLink, Github, Smartphone, Code, Database, Brain } from 'lucide-react';
-// Removed: import Image from 'next/image';
+// UPDATED: Added Play and Apple icons
+import { ExternalLink, Github, Smartphone, Code, Database, Brain, Play, Apple } from 'lucide-react';
 
 const projects = [
   {
@@ -216,6 +216,7 @@ export function Projects() {
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       className="flex items-center justify-center w-10 h-10 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors"
+                      title="Live Demo"
                     >
                       <ExternalLink size={16} />
                     </motion.a>
@@ -228,6 +229,7 @@ export function Projects() {
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       className="flex items-center justify-center w-10 h-10 bg-gray-800 text-white rounded-full hover:bg-gray-900 transition-colors"
+                      title="GitHub Repository"
                     >
                       <Github size={16} />
                     </motion.a>
@@ -240,8 +242,10 @@ export function Projects() {
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       className="flex items-center justify-center w-10 h-10 bg-green-500 text-white rounded-full hover:bg-green-600 transition-colors"
+                      title="View on Play Store"
                     >
-                      <Smartphone size={16} />
+                      {/* UPDATED Icon */}
+                      <Play size={16} />
                     </motion.a>
                   )}
                   {/* ADDED App Store Link Rendering */}
@@ -255,7 +259,8 @@ export function Projects() {
                       className="flex items-center justify-center w-10 h-10 bg-blue-400 text-white rounded-full hover:bg-blue-500 transition-colors"
                       title="View on App Store"
                     >
-                      <Smartphone size={16} />
+                      {/* UPDATED Icon */}
+                      <Apple size={16} />
                     </motion.a>
                   )}
                 </div>
