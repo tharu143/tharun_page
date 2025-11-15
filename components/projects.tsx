@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink, Github, Smartphone, Code, Database, Brain } from 'lucide-react';
-import Image from 'next/image'; // Import Image component
+// Removed: import Image from 'next/image';
 
 const projects = [
   {
@@ -17,6 +17,7 @@ const projects = [
       demo: '#', // Placeholder, update if you have a live demo
       github: 'https://github.com/tharu143', // Linked to your GitHub
       playstore: 'https://play.google.com/store/apps/details?id=org.kylesolutions.kepler_tech_llc.kepler_tech_app', // Play Store link
+      appstore: 'https://apps.apple.com/us/app/kepler-tech-llc/id6752988659', // ADDED App Store link
     },
     icon: <Smartphone className="w-6 h-6" />,
   },
@@ -85,6 +86,34 @@ const projects = [
     },
     icon: <Brain className="w-6 h-6" />,
   },
+  // --- NEW PROJECTS ADDED ---
+  {
+    title: 'Client Project - ERP Location Tracking',
+    description: 'ERP-based mobile application for real-time location tracking and logistics management.',
+    image: '/oryx.jpg', // Placeholder image path - update this
+    technologies: ['Flutter', 'Dart', 'ERPNext', 'Frappe APIs', 'Geolocation'],
+    category: 'Mobile Development',
+    achievements: ['Real-time location tracking', 'ERP integration', 'Android app published'],
+    links: {
+      github: 'https://github.com/tharu143', // Assumed GitHub, update if different
+      playstore: 'https://play.google.com/store/apps/details?id=org.kylesolutions.oryx_app&pcampaignid=web_share',
+    },
+    icon: <Smartphone className="w-6 h-6" />,
+  },
+  {
+    title: 'Client Project - Product Info Collector',
+    description: 'Mobile application for gathering and managing product item information, syncing with ERP systems.',
+    image: '/qubeart.jpg', // Placeholder image path - update this
+    technologies: ['Flutter', 'Dart', 'ERPNext', 'Frappe APIs', 'Data Collection'],
+    category: 'Mobile Development',
+    achievements: ['Product data collection', 'ERP sync', 'Android app published', 'iOS app published'],
+    links: {
+      github: 'https://github.com/tharu143', // Assumed GitHub, update if different
+      playstore: 'https://play.google.com/store/apps/details?id=org.kylesolutions.qubeart&pcampaignid=web_share',
+      appstore: 'https://apps.apple.com/us/app/qubeart/id6755106336',
+    },
+    icon: <Smartphone className="w-6 h-6" />,
+  },
 ];
 
 export function Projects() {
@@ -124,13 +153,15 @@ export function Projects() {
               className="bg-white/10 dark:bg-black/10 backdrop-blur-sm rounded-xl overflow-hidden border border-white/20 dark:border-white/10 shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <div className="relative h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
-                {/* Replaced placeholder image with Next.js Image component */}
-                <Image
+                {/* Replaced Next.js Image with standard <img> tag and Tailwind classes for compatibility */}
+                <img
                   src={project.image}
                   alt={project.title}
-                  layout="fill" // Ensures the image fills the container
-                  objectFit="cover" // Covers the container while maintaining aspect ratio
-                  className="absolute inset-0 z-0 rounded-t-xl" // Added rounded-t-xl for consistency
+                  className="absolute inset-0 z-0 rounded-t-xl w-full h-full object-cover" // Ensures image fills container
+                  // Add an onerror to handle missing images gracefully
+                  onError={(e) => {
+                    e.currentTarget.src = `https://placehold.co/600x400/5e60e6/ffffff?text=${project.title.split(' ')[0]}`;
+                  }}
                 />
                 <div className="relative z-10 text-white text-6xl opacity-20">
                   {project.icon}
@@ -209,6 +240,20 @@ export function Projects() {
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       className="flex items-center justify-center w-10 h-10 bg-green-500 text-white rounded-full hover:bg-green-600 transition-colors"
+                    >
+                      <Smartphone size={16} />
+                    </motion.a>
+                  )}
+                  {/* ADDED App Store Link Rendering */}
+                  {project.links.appstore && (
+                    <motion.a
+                      href={project.links.appstore}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="flex items-center justify-center w-10 h-10 bg-blue-400 text-white rounded-full hover:bg-blue-500 transition-colors"
+                      title="View on App Store"
                     >
                       <Smartphone size={16} />
                     </motion.a>
