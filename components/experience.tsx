@@ -8,13 +8,13 @@ const experiences = [
   {
     company: 'Kyle Solution Pvt Ltd',
     position: 'Flutter Developer',
-    duration: '8 Months (Current)',
+    duration: '11 Months (Current)',
     location: 'India',
     type: 'Full-time',
     achievements: [
       'Developed multiple ERPNext-based mobile applications',
       'Built HR, Sales, CRM, and Accounting modules',
-      'Published 3 Android apps and 1 iOS app to respective stores',
+      'Published  5 Android apps and 3 iOS app to respective stores',
       'Integrated Frappe REST APIs with mobile applications',
       'Implemented custom ERPNext modules for enhanced functionality',
     ],

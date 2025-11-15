@@ -12,7 +12,7 @@ const projects = [
     image: '/erp.jpg', // Updated image path
     technologies: ['Flutter', 'Dart', 'ERPNext', 'Python', 'Frappe APIs'],
     category: 'Mobile Development',
-    achievements: ['3 Android apps published', '1 iOS app published', 'ERPNext integration'],
+    achievements: ['5 Android apps published', '3 iOS app published', 'ERPNext integration'],
     links: {
       demo: '#', // Placeholder, update if you have a live demo
       github: 'https://github.com/tharu143', // Linked to your GitHub

@@ -5,9 +5,9 @@ import { useInView } from 'react-intersection-observer';
 import { Code, Smartphone, Database, Users } from 'lucide-react';
 
 const stats = [
-  { number: '8+', label: 'Months Experience' },
-  { number: '4', label: 'Apps Published' },
-  { number: '15+', label: 'Projects Completed' },
+  { number: '11+', label: 'Months Experience' },
+  { number: '8', label: 'Apps Published' },
+  { number: '25+', label: 'Projects Completed' },
   { number: '100%', label: 'Client Satisfaction' },
 ];
 
